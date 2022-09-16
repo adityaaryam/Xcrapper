@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+
+	"name": "Xcrapper",
+	"description": "An email,phone Number scraping extension for Chrome with an option to download as CSV",
+	"version": "1.0",
+	"author": "@adityaaryam",
+
+	"background": {
+		"scripts": ["popup.js"],
+		"persistent": true
+	},
+
+	"permissions": [
+        "tabs",
+		"storage",
+        "http://*/",
+        "https://*/"
+    ],
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "popup.html"
+	},
+	"icons":{
+		"128":"logo.png"
+	}
+}
